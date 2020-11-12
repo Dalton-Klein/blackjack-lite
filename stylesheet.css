@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'casino';
+  src: url(fonts/casinoRegular.ttf);
+  font-style: normal;
+  font-weight: 100;
+  color: black;
+}
+@font-face {
+  font-family: 'casino2';
+  src: url(fonts/BungeeInline-Regular.ttf);
+  font-style: normal;
+  font-weight: 100;
+  color: black;
+}
+
+p {
+  color: burlywood;
+
+}
+
+body{
+  background-image: url(img/Table1.jpg);
+  background-size: cover;
+  background-position: center;
+  vertical-align: bottom;
+}
+
+.game-content {
+  width:100%;
+  height:100%;
+  position:relative;
+  margin:auto;
+  padding:0px;
+}
+
+.result-content {
+  background-size: 250px 215px;
+  width:19%;
+  height:25%;
+  position:fixed;
+  top:30%;
+  left:40.5%;
+  z-index:100;
+  text-align:center;
+}
+
+.result-image {
+  width: 250px;
+  height: 215px;
+  background-size: contain;
+  background-position: center;
+  vertical-align: center;
+}
+
+.page-title {
+  color: black;
+  font-family: casino;
+  font-weight: normal;
+  text-align: center;
+  font-size: 5em;
+}
+
+.game-info {
+  color: black;
+  font-weight: normal;
+  font-size: 1em;
+  vertical-align: top;
+  transform: translate(0px, -50px);
+  
+}
+
+.dealer-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.player-container {
+  display: grid;
+  grid-template-columns: 80px, 80px, 80px, 80px, 80px, 80px;
+  grid-template-rows: 80px, 80px;
+  justify-content: center;
+  position: relative;
+}
+
+/*.card {
+  src: img/6C.png;
+  width: 120px;
+  height: 183px;
+  background-size: contain;
+}
+*/
+
+.front-face {
+  width: 120px;
+  height: 183px;
+  background-size: contain;
+}
+
+.pcard-1 {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+.pcard-2 {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.pcard-3 {
+  grid-column: 3/5;
+  grid-row: 1;
+}
+
+.pcard-4 {
+  grid-column: 4/6;
+  grid-row: 1;
+}
+
+.pcard-5 {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+.pcard-6 {
+  grid-column: 2/4;
+  grid-row: 2;
+}
+
+.pcard-7 {
+  grid-column: 3/5;
+  grid-row: 2;
+}
+
+.pcard-8 {
+  grid-column: 4/6;
+  grid-row: 2;
+}
+
+.buttons-rack {
+  display: flex;
+  justify-content: center;
+  transform: translate( 0%, 275%);
+}
+.deal-button {
+  background-color: #ffffff; 
+  border: 2px solid #000000;
+  color: rgb(0, 0, 0);
+  padding: 8px 20px;
+  font-family: casino2;
+  font-size: 3em;
+}
+
+.hit-button {
+  background-color: #ffffff; 
+  border: 2px solid #000000;
+  color: rgb(0, 0, 0);
+  padding: 8px 37px;
+  font-family: casino2;
+  font-size: 3em;
+  margin-right: 20px;
+}
+
+.continue-button {
+  background-color: #ffffff; 
+  border: 2px solid #000000;
+  color: rgb(0, 0, 0);
+  padding: 8px 37px;
+  font-family: casino2;
+  font-size: 2em;
+}
+
+.divider{
+  width:15px;
+  height:auto;
+  display:inline-block;
+}
+
+.dealer-ui {
+  width: 50%;
+  float: right;
+}
+
+.player-ui {
+  width: 50%;
+  float: left;
+}
+
+.indicator-text{
+  padding: 20px 10px;
+  font-family: casino2;
+  font-size: 2em;
+}
+
+.count{
+  padding: 20px 10px;
+  font-family: casino2;
+  font-size: 2em;
+}
+
+

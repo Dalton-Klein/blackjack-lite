@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <link rel="stylesheet" type= "text/css" href="stylesheet.css">
+    <link rel="shortcut icon" href="#">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>
+      Free Browser Blackjack
+    </title>
+  </head>
+
+  <body>
+    <h1 class="page-title"> Free Browser Blackjack
+    </h1>
+    <div class="game-content">
+        <!--
+        <div class="game-info">
+        <center>
+        <div>Current Deck<div id="uiDeck">Blank</div></div>
+        </center>
+      </div>
+      -->
+      <div class="dealer-ui">
+        <center>
+        <div class="indicator-text" id="dealer-text">Dealer</div>
+
+        <div class="dealer-container">
+
+          <div class="pcard-1" >
+            <img id="dealer-card-1" class="front-face" src="img/red-back.png" />
+          </div>
+
+          <div class="pcard-2" >
+            <img id="dealer-card-2" class="front-face" src="img/red-back.png" />
+          </div>
+
+          <div class="pcard-3" >
+            <img id="dealer-card-3" class="front-face" src="img/red-back.png" />
+          </div>
+
+          <div class="pcard-4" >
+            <img id="dealer-card-4" class="front-face" src="img/red-back.png" />
+          </div>
+
+          <div class="pcard-5" >
+            <img id="dealer-card-5" class="front-face" src="img/red-back.png" />
+          </div>
+
+          <div class="pcard-6" >
+            <img id="dealer-card-6" class="front-face" src="img/red-back.png" />
+          </div>
+
+          <div class="pcard-7" >
+            <img id="dealer-card-7" class="front-face" src="img/red-back.png" />
+          </div>
+
+          <div class="pcard-8" >
+            <img id="dealer-card-8" class="front-face" src="img/red-back.png" />
+          </div>
+        
+        </div>
+        <span class="count" id="dealer-count">0</span>
+        </center>
+        </div>
+
+
+      <div class="player-ui">
+        <center>
+        <div class="indicator-text" id="you-text">You</div>
+
+        <div class="player-container">
+
+          <div class="pcard-1" >
+            <img id="player-card-1" class="front-face" src="img/red-back.png">
+          </div>
+
+          <div class="pcard-2" >
+            <img id="player-card-2" class="front-face" src="img/red-back.png">
+          </div>
+
+          <div class="pcard-3" >
+            <img id="player-card-3" class="front-face" src="img/red-back.png">
+          </div>
+
+          <div class="pcard-4" >
+            <img id="player-card-4" class="front-face" src="img/red-back.png">
+          </div>
+
+          <div class="pcard-5" >
+            <img id="player-card-5" class="front-face" src="img/red-back.png">
+          </div>
+
+          <div class="pcard-6" >
+            <img id="player-card-6" class="front-face" src="img/red-back.png">
+          </div>
+
+          <div class="pcard-7" >
+            <img id="player-card-7" class="front-face" src="img/red-back.png">
+          </div>
+
+          <div class="pcard-8" >
+            <img id="player-card-8" class="front-face" src="img/red-back.png">
+          </div>
+      
+        </div>
+        <span class="count" id="player-count">0</span>
+        </center>
+        </div>
+
+      <span class="buttons-rack">
+        <button type="button" class="deal-button" id="deal-button">
+          Deal
+        </button>
+
+        <button type="button" class="hit-button" id="hit-button">
+          Hit
+        </button>
+
+
+        <button type="button" class="deal-button" id="stay-button">
+          Stay
+        </button>
+
+        <button type="button" class="continue-button" id="continue-button">
+          Play Again
+        </button>
+
+      </span>
+
+    </div>
+    <div class="result-content" id="result-content">
+      <img class="result-image" src="img/pushImage.png" id="result-image">
+    </div>
+    
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+
+</html>
